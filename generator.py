@@ -1,8 +1,11 @@
 import cohere
 import os
+import streamlit as st
 from dotenv import load_dotenv
-load_dotenv()
-co = cohere.Client(os.getenv("COHERE_API_KEY"))
+load_dotenv() 
+api_key = st.secrets.get("COHERE_API_KEY", os.getenv("COHERE_API_KEY"))
+co = cohere.Client(api_key)
+
 
 def generate_design_brief(
     design_type: str,
