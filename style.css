@@ -1,0 +1,171 @@
+.stApp {
+    background: linear-gradient(135deg, #0f0f0f 0%, #1a1a1a 60%, #4221d6 120%);
+    color: #ffffff;
+    font-family: 'Inter', sans-serif;
+}
+h1 {
+    text-align: center;
+    font-size: 2.4rem !important;
+    font-weight: 800;
+    margin-bottom: 1rem;
+    background:#ffffff ;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+/* Dropdowns */
+.stSelectbox div[data-baseweb="select"] {
+    background-color: #1e1e1e !important;
+    border-radius: 8px;
+    border: 1px solid #4221d6 !important;
+    color: #ffffff !important;
+}
+.stSelectbox div[data-baseweb="select"]:hover {
+    border: 1px solid #5a3fff !important;
+}
+
+/* Buttons */
+.stButton > button {
+    width: 100%;
+    background: linear-gradient(90deg, #4221d6, #5a3fff);
+    color: #ffffff !important;
+    border: none;
+    border-radius: 8px;
+    padding: 0.8em 1.2em;
+    font-weight: 700;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+.stButton > button:hover {
+    background: linear-gradient(90deg, #5a3fff, #4221d6);
+    transform: translateY(-2px);
+    box-shadow: 0px 6px 16px rgba(66, 33, 214, 0.6);
+    color: #ffffff !important;
+}
+
+.social-icons {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+.social-icons img {
+    width: 28px;
+    height: 28px;
+    filter: brightness(0) invert(1);
+    transition: transform 0.2s ease, filter 0.2s ease;
+    cursor: pointer;
+}
+.social-icons img:hover {
+    transform: scale(1.2);
+    filter: invert(49%) sepia(94%) saturate(4353%) hue-rotate(241deg) brightness(96%) contrast(101%);
+}
+/*Brief Panel*/
+.brief-box {
+    background: linear-gradient(180deg, #1e1e1e 0%, #141414 100%);
+    border-radius: 14px;
+    padding: 30px;
+    margin: 20px auto;
+    border: 1px solid #5a3fff;
+    max-width: 95%;
+    max-height: 80vh;
+    overflow-y: auto;
+    animation: fadeIn 0.6s ease-in-out;
+}
+/* Brand Title */
+.brand-title {
+    font-size: 2rem;
+    font-weight: 900;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    color: #ffffff;
+    border-bottom: 3px solid #4221d6;
+    padding-bottom: 8px;
+    margin-bottom: 25px;
+}
+/* Section Headings */
+.brief-box h2 {
+    font-size: 1.3rem;
+    font-weight: 800;
+    margin-top: 20px;
+    margin-bottom: 12px;
+    border-left: 4px solid #4221d6;
+    padding-left: 10px;
+    text-transform: uppercase;
+}
+
+/* Body text */
+.brief-box p,
+.brief-box li {
+    color: #dcdcdc;
+    line-height: 1.6;
+    font-size: 0.95rem;
+}
+
+/* Brand color swatches */
+.color-swatch {
+    display: inline-block;
+    width: 26px;
+    height: 26px;
+    border-radius: 6px;
+    margin-right: 8px;
+    border: 2px solid #333;
+}
+/* Reduce side padding */
+.block-container {
+    padding-left: 2rem !important;
+    padding-right: 2rem !important;
+    max-width: 95% !important;
+}
+/* Download Button aligned with brief box */
+.stDownloadButton {
+    display: flex;
+    justify-content: center;
+    margin-top: 12px;
+}
+.export-container {
+    max-width: 95%;
+    margin: 10px auto 0 auto; 
+}
+/* Button styling */
+.stDownloadButton button {
+    width: 20%; 
+    background: #141414;     
+    color: #ffffff !important;    
+    border: 2px solid #4221d6;
+    border-radius: 8px;
+    padding: 0.8em 1.2em;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s ease;
+    display: inline-flex;      
+    align-items: center;
+    justify-content: center;
+    gap: 8px;                   
+}
+
+/* Icon inside button */
+.stDownloadButton button::before {
+    content: "";
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAX0lEQVR4nOXPMQqAMAxG4e4eQg8itHj/g+gpPil06FC0dhDBfwkJvJckhE8H/ijA3BLU8yt4wYFYC5DKfOmRrNixZUHpM7w9eSMWSKmpG25dEkaDaRgOgxtv8+5FPTkBJx2O2e7WhLIAAAAASUVORK5CYII=");
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.stDownloadButton button:hover {
+    background: #4221d6;
+    color: #ffffff !important;
+}
+
+/* Animation */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(15px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.fade-in {
+    animation: fadeIn 0.5s ease-in-out;
+}
