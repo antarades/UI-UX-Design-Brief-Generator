@@ -8,7 +8,7 @@ Perfect for **students, designers, and portfolio builders** who want practice wi
 ---
 ## 🌐 Live Demo  
 Calling all designers, check out the live website👉 [UI/UX Brief Generator](https://ui-ux-design-brief-generator.streamlit.app/)
----
+
 ---
 
 ## ✨ Features
