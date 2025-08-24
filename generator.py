@@ -3,9 +3,7 @@ import os
 import streamlit as st
 from dotenv import load_dotenv
 load_dotenv() 
-api_key = st.secrets.get("COHERE_API_KEY", os.getenv("COHERE_API_KEY"))
-co = cohere.Client(api_key)
-
+co = cohere.Client(st.secrets["COHERE_API_KEY"])
 
 def generate_design_brief(
     design_type: str,
@@ -56,3 +54,4 @@ Keep it concise, clear, and professional. No emojis.
     )
 
     return response.text.strip()
+
