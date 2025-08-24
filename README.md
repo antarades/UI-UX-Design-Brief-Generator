@@ -6,6 +6,10 @@ Perfect for **students, designers, and portfolio builders** who want practice wi
 ![App Screenshot](screenshot.png)
 
 ---
+## 🌐 Live Demo  
+Calling all designers, check out the live website👉 [UI/UX Brief Generator](https://ui-ux-design-brief-generator.streamlit.app/)
+---
+---
 
 ## ✨ Features
 - 🔹 Select **Industry**, **Difficulty**, **Brief Type**, and **Design Type (UI/UX)**  
